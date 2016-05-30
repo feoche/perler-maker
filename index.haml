@@ -1,0 +1,14 @@
+.container{"data-ng-app"=>"app","data-ng-controller"=>"AppController as vm"}
+  .delete{"data-ng-click"=>"vm.resetGrid()"}
+    %i.fa.fa-trash
+  .content
+    %ul.items
+      %li.item{"data-ng-repeat"=>"item in vm.getItems(vm.number) track by $index", "data-ng-mouseover"=>"vm.addHoverColor(vm.activeColor, $index)", "data-ng-mouseleave"=>"vm.removeHoverColor($index)", "data-ng-mousedown"=>"vm.setColor(vm.activeColor, $index)"}
+        .pearl{"data-ng-class"=>"vm.getItems[$index]"}
+          .blank
+            .holder
+    .palette
+      %ul.items
+        %li.item{"data-ng-repeat"=>"color in vm.colors track by $index","data-ng-click"=>"vm.activeColor = color","data-ng-class"=>"{'active': vm.activeColor === color}"}
+          .pearl{"data-ng-class"=>"'pearl-' + color"}
+  

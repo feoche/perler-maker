@@ -1,0 +1,98 @@
+$external-bg: lightgrey
+$colors: black, darkgrey, grey, white, saddlebrown, sienna, darkgoldenrod, peru, burlywood, tan, beige, maroon, brown, red, tomato, lightcoral, salmon, lightpink, thistle, chocolate, darkorange, sandybrown, orange, yellow, khaki, darkviolet, mediumorchid, plum, darkslateblue, blue, mediumpurple, steelblue, royalblue, cadetblue, skyblue, darkgreen, forestgreen, green, seagreen, mediumseagreen, limegreen
+@mixin pearl-color()
+  @each $color in $colors
+    &.pearl-#{$color}
+      background: $color
+    &.pearl-#{$color}-hover
+      background: $color
+      opacity: 0.5 
+    
+html, body
+  width: 100%
+  height: 100%
+
+body
+  margin: 0
+  font-size: 0
+  background: $external-bg
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+ 
+.delete
+  position: fixed
+  top: 0
+  left: 0
+  margin: 10px
+  width: 30px
+  height: 30px
+  font-size: 30px
+  color: black
+  
+.items
+  width: 1200px
+  height: 800px
+  padding: 10px
+  background: $external-bg
+  
+  .item
+    position: relative
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    width: 30px
+    height: 30px
+    
+    .pearl
+      width: 28px
+      height: 28px
+      border-radius: 50%
+      background: darken($external-bg, 2%)
+      display: flex
+      align-items: center
+      justify-content: center
+      @include pearl-color()
+      
+      .blank
+        width: 15px
+        height: 15px
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        
+        .holder
+          width: 10px
+          height: 10px
+          margin: 1px
+          background: darkgrey
+          border-radius: 50%
+          border: solid 1px grey
+          
+.palette
+  position: fixed
+  top: 0
+  right: 0
+  max-width: 50px
+  background: $external-bg
+  
+  .items    
+    width: auto
+    height: auto
+    padding: 10px
+    .item
+      display: block
+      width: 20px
+      height: 20px
+      
+      &.active
+        border: solid 1px black
+      
+      &:nth-child(2n)
+        top: inherit
+      
+      .pearl
+        width: 20px
+        height: 20px

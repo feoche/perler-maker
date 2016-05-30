@@ -1,0 +1,416 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 0;
+  background: lightgrey;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.delete {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: black;
+}
+
+.items {
+  width: 1200px;
+  height: 800px;
+  padding: 10px;
+  background: lightgrey;
+}
+.items .item {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+.items .item .pearl {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #cecece;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.items .item .pearl.pearl-black {
+  background: black;
+}
+.items .item .pearl.pearl-black-hover {
+  background: black;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-darkgrey {
+  background: darkgrey;
+}
+.items .item .pearl.pearl-darkgrey-hover {
+  background: darkgrey;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-grey {
+  background: grey;
+}
+.items .item .pearl.pearl-grey-hover {
+  background: grey;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-white {
+  background: white;
+}
+.items .item .pearl.pearl-white-hover {
+  background: white;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-saddlebrown {
+  background: saddlebrown;
+}
+.items .item .pearl.pearl-saddlebrown-hover {
+  background: saddlebrown;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-sienna {
+  background: sienna;
+}
+.items .item .pearl.pearl-sienna-hover {
+  background: sienna;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-darkgoldenrod {
+  background: darkgoldenrod;
+}
+.items .item .pearl.pearl-darkgoldenrod-hover {
+  background: darkgoldenrod;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-peru {
+  background: peru;
+}
+.items .item .pearl.pearl-peru-hover {
+  background: peru;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-burlywood {
+  background: burlywood;
+}
+.items .item .pearl.pearl-burlywood-hover {
+  background: burlywood;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-tan {
+  background: tan;
+}
+.items .item .pearl.pearl-tan-hover {
+  background: tan;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-beige {
+  background: beige;
+}
+.items .item .pearl.pearl-beige-hover {
+  background: beige;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-maroon {
+  background: maroon;
+}
+.items .item .pearl.pearl-maroon-hover {
+  background: maroon;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-brown {
+  background: brown;
+}
+.items .item .pearl.pearl-brown-hover {
+  background: brown;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-red {
+  background: red;
+}
+.items .item .pearl.pearl-red-hover {
+  background: red;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-tomato {
+  background: tomato;
+}
+.items .item .pearl.pearl-tomato-hover {
+  background: tomato;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-lightcoral {
+  background: lightcoral;
+}
+.items .item .pearl.pearl-lightcoral-hover {
+  background: lightcoral;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-salmon {
+  background: salmon;
+}
+.items .item .pearl.pearl-salmon-hover {
+  background: salmon;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-lightpink {
+  background: lightpink;
+}
+.items .item .pearl.pearl-lightpink-hover {
+  background: lightpink;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-thistle {
+  background: thistle;
+}
+.items .item .pearl.pearl-thistle-hover {
+  background: thistle;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-chocolate {
+  background: chocolate;
+}
+.items .item .pearl.pearl-chocolate-hover {
+  background: chocolate;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-darkorange {
+  background: darkorange;
+}
+.items .item .pearl.pearl-darkorange-hover {
+  background: darkorange;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-sandybrown {
+  background: sandybrown;
+}
+.items .item .pearl.pearl-sandybrown-hover {
+  background: sandybrown;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-orange {
+  background: orange;
+}
+.items .item .pearl.pearl-orange-hover {
+  background: orange;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-yellow {
+  background: yellow;
+}
+.items .item .pearl.pearl-yellow-hover {
+  background: yellow;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-khaki {
+  background: khaki;
+}
+.items .item .pearl.pearl-khaki-hover {
+  background: khaki;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-darkviolet {
+  background: darkviolet;
+}
+.items .item .pearl.pearl-darkviolet-hover {
+  background: darkviolet;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-mediumorchid {
+  background: mediumorchid;
+}
+.items .item .pearl.pearl-mediumorchid-hover {
+  background: mediumorchid;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-plum {
+  background: plum;
+}
+.items .item .pearl.pearl-plum-hover {
+  background: plum;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-darkslateblue {
+  background: darkslateblue;
+}
+.items .item .pearl.pearl-darkslateblue-hover {
+  background: darkslateblue;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-blue {
+  background: blue;
+}
+.items .item .pearl.pearl-blue-hover {
+  background: blue;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-mediumpurple {
+  background: mediumpurple;
+}
+.items .item .pearl.pearl-mediumpurple-hover {
+  background: mediumpurple;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-steelblue {
+  background: steelblue;
+}
+.items .item .pearl.pearl-steelblue-hover {
+  background: steelblue;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-royalblue {
+  background: royalblue;
+}
+.items .item .pearl.pearl-royalblue-hover {
+  background: royalblue;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-cadetblue {
+  background: cadetblue;
+}
+.items .item .pearl.pearl-cadetblue-hover {
+  background: cadetblue;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-skyblue {
+  background: skyblue;
+}
+.items .item .pearl.pearl-skyblue-hover {
+  background: skyblue;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-darkgreen {
+  background: darkgreen;
+}
+.items .item .pearl.pearl-darkgreen-hover {
+  background: darkgreen;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-forestgreen {
+  background: forestgreen;
+}
+.items .item .pearl.pearl-forestgreen-hover {
+  background: forestgreen;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-green {
+  background: green;
+}
+.items .item .pearl.pearl-green-hover {
+  background: green;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-seagreen {
+  background: seagreen;
+}
+.items .item .pearl.pearl-seagreen-hover {
+  background: seagreen;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-mediumseagreen {
+  background: mediumseagreen;
+}
+.items .item .pearl.pearl-mediumseagreen-hover {
+  background: mediumseagreen;
+  opacity: 0.5;
+}
+.items .item .pearl.pearl-limegreen {
+  background: limegreen;
+}
+.items .item .pearl.pearl-limegreen-hover {
+  background: limegreen;
+  opacity: 0.5;
+}
+.items .item .pearl .blank {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.items .item .pearl .blank .holder {
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  background: darkgrey;
+  border-radius: 50%;
+  border: solid 1px grey;
+}
+
+.palette {
+  position: fixed;
+  top: 0;
+  right: 0;
+  max-width: 50px;
+  background: lightgrey;
+}
+.palette .items {
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+.palette .items .item {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.palette .items .item.active {
+  border: solid 1px black;
+}
+.palette .items .item:nth-child(2n) {
+  top: inherit;
+}
+.palette .items .item .pearl {
+  width: 20px;
+  height: 20px;
+}
